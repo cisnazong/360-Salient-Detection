@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#BASNet data, model
+/Projects/Codes/BASNet/test_data
+/Projects/Codes/BASNet/train_data
+/Projects/Codes/BASNet/saved_models
+/Projects/Codes/BASNet/__pycache__
+
+#MacOS
+.DS_Store
