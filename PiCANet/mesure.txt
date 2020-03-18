@@ -1,0 +1,1 @@
+python measure_test.py --model_dir ./models/state_dict/03161731 --cuda cuda --batch_size 1 --logdir ./repo_log0316/ --cont 5 --step 5 --dataset ./dataset/

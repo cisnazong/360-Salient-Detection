@@ -48,8 +48,9 @@ if __name__ == '__main__':
         pred = pred[5].data
         pred.requires_grad_(False)
         if args.logdir is not None:
-            writer.add_image(args.model_dir + ', img', img, i)
-            writer.add_image(args.model_dir + ', mask', pred, i)
+            for j in range(img.shape[0]):
+                writer.add_image(args.model_dir + ', img', img, i)
+                writer.add_image(args.model_dir + ', mask', pred, i)
         if args.save_dir is not None:
             for j in range(img.shape[0]):
                 torchvision.utils.save_image(img[j], os.path.join(args.save_dir, 'img', '{}_{}.jpg'.format(i, j)))

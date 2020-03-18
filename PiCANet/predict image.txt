@@ -1,0 +1,1 @@
+python image_test.py --dataset ./test/ --model_dir ./models/state_dict/03161731/90epo_2000step.ckpt --cuda cuda --batch_size 2 --logdir img_log0316 --save_dir saved_0316

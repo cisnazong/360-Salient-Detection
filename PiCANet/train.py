@@ -36,10 +36,13 @@ if __name__ == '__main__':
     parser.add_argument('--lr_decay', help='Learning rate decrease by lr_decay time per decay_step, default = 0.1',
                         default=0.1, type=float)
     parser.add_argument('--decay_step', help='Learning rate decrease by lr_decay time per decay_step,  default = 7000',
-                        default=7000, type=int)
+                        default=1000, type=int)
     parser.add_argument('--display_freq', help='display_freq to display result image on Tensorboard',
                         default=1000, type=int)
-
+    parser.add_argument('--num_shuffle', help='number of batches shuffled for training',
+                        default=10, type=int)
+    parser.add_argument('--save_step', help='step of model save',
+                        default=200, type=int)
 
     args = parser.parse_args()
     # TODO : Add multiGPU Model
@@ -49,6 +52,9 @@ if __name__ == '__main__':
     duts_dataset = PairDataset(args.dataset)
     load = args.load
     start_iter = 0
+    save_step = args.save_step
+    
+    
     model = Unet(cfg).cuda()
     vgg = torchvision.models.vgg16(pretrained=True)
     model.encoder.seq.load_state_dict(vgg.features.state_dict())
@@ -88,10 +94,11 @@ if __name__ == '__main__':
     os.makedirs(os.path.join(weight_save_dir), exist_ok=True)
     writer = SummaryWriter(os.path.join('log', now.strftime('%m%d%H%M')))
     iterate = start_iter
+    shuffled_num = args.num_shuffle
     for epo in range(start_epo, epoch):
         print("\nEpoch : {}".format(epo))
         for i, batch in enumerate(tqdm(dataloader)):
-            if i > 10:
+            if i > shuffled_num:
                 break
             opt_dec.zero_grad()
             opt_en.zero_grad()
@@ -109,7 +116,7 @@ if __name__ == '__main__':
                 writer.add_image('GT', mask, iterate)
                 writer.add_image('Image', img, iterate)
 
-            if iterate % 200 == 0:
+            if iterate % save_step == 0:
                 if i != 0:
                     torch.save(model.state_dict(),
                                os.path.join(weight_save_dir, '{}epo_{}step.ckpt'.format(epo, iterate)))
