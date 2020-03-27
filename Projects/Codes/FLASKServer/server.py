@@ -3,7 +3,7 @@ from tools import Detector
 import json, time
 import cv2
 app = Flask(__name__)
-frameDetector = Detector('./saved_models/basnet_bsi/basnet.pth')
+frameDetector = Detector('./saved_models/basnet_bsi/basnet_self_trained.pth')
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
