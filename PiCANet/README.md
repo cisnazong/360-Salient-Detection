@@ -58,7 +58,9 @@ Nvidia gtx 1080ti
     usage: train.py [-h] [--load LOAD] --dataset DATASET [--cuda CUDA]
                     [--batch_size BATCH_SIZE] [--epoch EPOCH] [-lr LEARNING_RATE]
                     [--lr_decay LR_DECAY] [--decay_step DECAY_STEP]
-                    [--display_freq DISPLAY_FREQ]
+                    [--display_freq DISPLAY_FREQ] [--num_shuffle NUM]
+	    [--save_step SAVE_STEP]
+
     optional arguments:
       -h, --help            show this help message and exit
       --load LOAD           Directory of pre-trained model, you can download at
@@ -76,6 +78,10 @@ Nvidia gtx 1080ti
                             Learning rate decrease by lr_decay time per decay_step,  default = 7000
       --display_freq DISPLAY_FREQ
                             display_freq to display result image on Tensorboard
+      --num_shuffle NUM 
+	            number of batches shuffled for training， default = 10
+      --save_step SAVE_STEP
+	            step of model save
 
 </pre>
 

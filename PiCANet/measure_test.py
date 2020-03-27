@@ -18,19 +18,19 @@ if __name__ == '__main__':
                              "https://drive.google.com/drive/folders/1s4M-_SnCPMj_2rsMkSy3pLnLQcgRakAe?usp=sharing")
     parser.add_argument('--dataset', help='Directory of your test_image ""folder""', required=True)
     parser.add_argument('--cuda', help="cuda for cuda, cpu for cpu, default = cuda", default='cuda')
-    parser.add_argument('--batch_size', help="batchsize, default = 4", default=4, type=int)
+    parser.add_argument('--batch_size', help="batchsize, default = 1", default=1, type=int)
     parser.add_argument('--logdir', help="logdir, log on tensorboard", default=None)
     parser.add_argument('--which_iter', help="Specific Iter to measure", default=-1, type=int)
     parser.add_argument('--cont', help="Measure scores from this iter", default=0, type=int)
-    parser.add_argument('--step', help="Measure scores per this iter step", default=10000, type=int)
+    parser.add_argument('--step', help="Measure scores per this iter step", default=10, type=int)
 
     args = parser.parse_args()
 
     models = sorted(os.listdir(args.model_dir), key=lambda x: int(x.split('epo_')[1].split('step')[0]))
     pairdataset = PairDataset(root_dir=args.dataset, train=False, data_augmentation=False)
-    dataloader = DataLoader(pairdataset, 8, shuffle=True)
+    dataloader = DataLoader(pairdataset, args.batch_size, shuffle=True)
     beta_square = 0.3
-    device = torch.device("cuda")
+    device = torch.device(args.cuda)
     if args.logdir is not None:
         writer = SummaryWriter(args.logdir)
     model = Unet().to(device)

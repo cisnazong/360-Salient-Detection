@@ -1,0 +1,1 @@
+python train.py --dataset ./dataset/ --batch_size 2 --epoch 100 -lr 0.01 --num_shuffle 10 --save_step 200

@@ -1,0 +1,8 @@
+1. Continue finetuning of PiCANet
+2. Comparison with SCRN/Basnet
+3. Watch files of H264,H265, etc
+4. Research of Segmentation methode
+5. Design experiments of different 360 to equi-rectangular methodes: 
+    1. Change better dataset of 360 graphs
+    2. Transform 360 dataset to 2d in traning process, then output 2d to 360 
+    3. Use 2d dataset in training process, then in predicting process, 360-2d input, 2d-360 output 
