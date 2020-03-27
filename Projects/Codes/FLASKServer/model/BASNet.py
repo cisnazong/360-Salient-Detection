@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from torchvision import models
-import torch.nn.functional as F
 
 from .resnet_model import *
 
@@ -62,7 +61,7 @@ class RefUnet(nn.Module):
 
         self.conv_d0 = nn.Conv2d(64,1,3,padding=1)
 
-        self.upscore2 = nn.Upsample(scale_factor=2, mode='bilinear')
+        self.upscore2 = nn.Upsample(scale_factor=2, mode="bilinear", align_corners=True)
 
 
     def forward(self,x):
@@ -231,11 +230,11 @@ class BASNet(nn.Module):
         self.relu1d_2 = nn.ReLU(inplace=True)
 
         ## -------------Bilinear Upsampling--------------
-        self.upscore6 = nn.Upsample(scale_factor=32,mode='bilinear')###
-        self.upscore5 = nn.Upsample(scale_factor=16,mode='bilinear')
-        self.upscore4 = nn.Upsample(scale_factor=8,mode='bilinear')
-        self.upscore3 = nn.Upsample(scale_factor=4,mode='bilinear')
-        self.upscore2 = nn.Upsample(scale_factor=2, mode='bilinear')
+        self.upscore6 = nn.Upsample(scale_factor=32, mode="bilinear", align_corners=True)###
+        self.upscore5 = nn.Upsample(scale_factor=16, mode="bilinear", align_corners=True)
+        self.upscore4 = nn.Upsample(scale_factor=8, mode="bilinear", align_corners=True)
+        self.upscore3 = nn.Upsample(scale_factor=4, mode="bilinear", align_corners=True)
+        self.upscore2 = nn.Upsample(scale_factor=2, mode="bilinear", align_corners=True)
 
         ## -------------Side Output--------------
         self.outconvb = nn.Conv2d(512,1,3,padding=1)
@@ -341,4 +340,4 @@ class BASNet(nn.Module):
         ## -------------Refine Module-------------
         dout = self.refunet(d1) # 256
 
-        return F.sigmoid(dout), F.sigmoid(d1), F.sigmoid(d2), F.sigmoid(d3), F.sigmoid(d4), F.sigmoid(d5), F.sigmoid(d6), F.sigmoid(db)
+        return torch.sigmoid(dout), torch.sigmoid(d1), torch.sigmoid(d2), torch.sigmoid(d3), torch.sigmoid(d4), torch.sigmoid(d5), torch.sigmoid(d6), torch.sigmoid(db)

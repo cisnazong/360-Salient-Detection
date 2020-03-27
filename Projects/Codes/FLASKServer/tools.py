@@ -58,7 +58,9 @@ class Detector(object):
         del d1, d2, d3, d4, d5, d6, d7, d8
         predict = pred.squeeze ( )
         predict_np = predict.cpu ( ).data.numpy ()
+
         predict_pil = Image.fromarray (predict_np * 255).convert ('RGB')
         predict_np = np.asarray(predict_pil)
+
         predict_base64 = self.image_to_base64(predict_np)
         return predict_base64
