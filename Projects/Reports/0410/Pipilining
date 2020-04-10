@@ -1,1 +1,2 @@
-
+To decide:
+    Need to modify that the Image Segmentation part should be dealing with the entire vr image before using Head-orientation Prediction
