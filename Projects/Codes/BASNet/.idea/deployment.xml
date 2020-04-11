@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="liyutong@liyutong-ubuntu.local:22" compareModeInSync="TIMESTAMP">
+    <serverData>
+      <paths name="liyutong@liyutong-ubuntu.local:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/Documents/BASNet" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yutong@202.120.55.134:51601">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/yutong/basnet" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
