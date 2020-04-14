@@ -1,7 +1,7 @@
 import pycuda.autoinit  # very important import
 import pycuda.driver as cuda
 from pycuda.compiler import SourceModule
-from .ImageProjectCUDA import ImageProjectorTarget
+from VideoProjectorCUDA.utils.ImageProjectCUDA import ImageProjectorTarget
 import multiprocessing
 import numpy as np
 import threading
@@ -57,7 +57,7 @@ def project_front(target, imgIn):
 	)
 
 	f = mod.get_function ("project_front")
-	f (cuda.Out (target.Output[0]), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
+	f (cuda.Out (target.Output), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
 	   grid=target.grid_dim)
 
 
@@ -109,7 +109,7 @@ def project_right(target, imgIn):
 		"""
 	)
 	f = mod.get_function ("project_right")
-	f (cuda.Out (target.Output[1]), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
+	f (cuda.Out (target.Output), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
 	   grid=target.grid_dim)
 
 
@@ -161,7 +161,7 @@ def project_back(target, imgIn):
 		"""
 	)
 	f = mod.get_function ("project_back")
-	f (cuda.Out (target.Output[2]), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
+	f (cuda.Out (target.Output), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
 	   grid=target.grid_dim)
 
 
@@ -213,7 +213,7 @@ def project_left(target, imgIn):
 		"""
 	)
 	f = mod.get_function ("project_left")
-	f (cuda.Out (target.Output[3]), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
+	f (cuda.Out (target.Output), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
 	   grid=target.grid_dim)
 
 
@@ -265,7 +265,7 @@ def project_up(target, imgIn):
 		"""
 	)
 	f = mod.get_function ("project_up")
-	f (cuda.Out (target.Output[4]), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
+	f (cuda.Out (target.Output), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
 	   grid=target.grid_dim)
 
 
@@ -317,19 +317,18 @@ def project_down(target, imgIn):
 		"""
 	)
 	f = mod.get_function ("project_down")
-	f (cuda.Out (target.Output[5]), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
+	f (cuda.Out (target.Output), cuda.In (imgIn), cuda.In (target.edge), block=target.block_dim,
 	   grid=target.grid_dim)
 
 def project_all(target, imgIn):
 	pass
 
 def project(T: ImageProjectorTarget, imgIn):
-	imgIn = imgIn
 	project_front (T, imgIn)
-	project_left (T, imgIn)
-	project_back (T, imgIn)
-	project_right (T, imgIn)
-	project_up (T, imgIn)
-	project_down (T, imgIn)
+	# project_left (T, imgIn)
+	# project_back (T, imgIn)
+	# project_right (T, imgIn)
+	# project_up (T, imgIn)
+	# project_down (T, imgIn)
 
 	return T.Output
