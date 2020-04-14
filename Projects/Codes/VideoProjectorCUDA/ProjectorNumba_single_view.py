@@ -2,12 +2,12 @@ import numba.cuda as cuda
 import numpy as np
 import math
 import cv2
-from utils import project_front, project_right, project_back, project_left, project_up, project_down
-from utils import ProjectConfig
+from utils.ImageProjectorCubicBilinear import project_front, project_right, project_back, project_left, project_up, project_down
+from utils.ImageProjectorCubicBilinear import ProjectConfig
 import time
 
 video_file_name = 'test_video.mp4'
-config = ProjectConfig ((3840, 1920))
+config = ProjectConfig ((3712, 1920))
 function_list = [project_front, project_right, project_back, project_left, project_up, project_down]
 stream_list = [cuda.stream () for i in range (6)]
 stream0 = cuda.stream ()
@@ -23,19 +23,14 @@ counter = 0
 while (cap.isOpened ()):
 	ret, frame = cap.read ()
 
-	frame = cv2.resize (frame, (3840, 1920))
+	# frame = cv2.resize (frame, (3840, 1920))
 	imgIn_gpu = cuda.to_device (frame, stream=stream0)
-	# stream0.synchronize()
-	for i in range (6):
-		function_list[i][config.grid_dim, config.block_dim, stream_list[i]] (imgOut_gpu_list[i], imgIn_gpu)
-		imgOut_gpu_list[i].copy_to_host(imgOut_cpu_list[i], stream=stream_list[i])
-	cuda.synchronize ()
-	# for i in range(6):
-	# 	stream_list[i].synchronize()
 
-	# cv2.imshow('front', imgOut_cpu_list[0])
-	# for i in range (6):
-	# 	cv2.imshow (title_list[i], imgOut_gpu_list[i].copy_to_host (stream=stream_list[i]))
+	function_list[0][config.grid_dim, config.block_dim, stream_list[0]] (imgOut_gpu_list[0], imgIn_gpu)
+	imgOut_gpu_list[0].copy_to_host(imgOut_cpu_list[0], stream=stream_list[0])
+	cuda.synchronize ()
+
+	cv2.imshow('test', imgOut_cpu_list[0])
 	if cv2.waitKey (1) & 0xFF == ord ('q'):
 		break
 	counter += 1
@@ -45,3 +40,6 @@ while (cap.isOpened ()):
 		start_time = time.time ()
 cap.release ()
 cv2.destroyAllWindows ()
+# 优化思路：
+# 1. 弃用python这种低效率语言
+# 2. 显示和计算异步进行

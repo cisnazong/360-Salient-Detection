@@ -5,8 +5,8 @@ class ProjectConfig (object):
 	def __init__(self, shape:tuple, d=3, block=(16, 16, 3)):
 		self.height = shape[1]  # heightß
 		self.width = shape[0]  # width
-		assert (isinstance(self.height,int) and isinstance(self.width, int))
-		assert (2 * self.height == self.width and self.height % 16 == 0)
+		# assert (isinstance(self.height,int) and isinstance(self.width, int))
+		# assert (2 * self.height == self.width and self.height % 16 == 0)
 
 		self.depth = d
 		self.edge= int(self.width / 4) # edge
@@ -35,23 +35,12 @@ def project_front(dest, src):
 
 	u1: int = int (math.floor (uf))
 	v1: int = int (math.floor (vf))
-	mu: float = uf - u1
-	mv: float = vf - v1
-	u2: int = u1 + 1
-	v2: int = v1 + 1
 
 	u1 = u1 % edge4
-	u2 = u2 % edge4
 	if v1 > edge2 - 1:
 		v1 = edge2 - 1
-	if v2 > edge2 - 1:
-		v2 = edge2 - 1
 
-	p0: float = src[v1, u1, k] * (1 - mu) * (1 - mv)
-	p1: float = src[v1, u2, k] * mu * (1 - mv)
-	p2: float = src[v2, u1, k] * (1 - mu) * mv
-	p3: float = src[v2, u2, k] * mu * mv
-	dest[j, i, k] = int (math.floor (p0 + p1 + p2 + p3))
+	dest[j, i, k] = src[v1, u1, k]
 
 
 @cuda.jit ('void(uint8[:,:,:],uint8[:,:,:])')
@@ -75,23 +64,12 @@ def project_right(dest, src):
 
 	u1: int = int (math.floor (uf))
 	v1: int = int (math.floor (vf))
-	mu: float = uf - u1
-	mv: float = vf - v1
-	u2: int = u1 + 1
-	v2: int = v1 + 1
 
 	u1 = u1 % edge4
-	u2 = u2 % edge4
 	if v1 > edge2 - 1:
 		v1 = edge2 - 1
-	if v2 > edge2 - 1:
-		v2 = edge2 - 1
 
-	p0: float = src[v1, u1, k] * (1 - mu) * (1 - mv)
-	p1: float = src[v1, u2, k] * mu * (1 - mv)
-	p2: float = src[v2, u1, k] * (1 - mu) * mv
-	p3: float = src[v2, u2, k] * mu * mv
-	dest[j, i, k] = int (math.floor (p0 + p1 + p2 + p3))
+	dest[j, i, k] = src[v1, u1, k]
 
 
 @cuda.jit ('void(uint8[:,:,:],uint8[:,:,:])')
@@ -115,23 +93,12 @@ def project_back(dest, src):
 
 	u1: int = int (math.floor (uf))
 	v1: int = int (math.floor (vf))
-	mu: float = uf - u1
-	mv: float = vf - v1
-	u2: int = u1 + 1
-	v2: int = v1 + 1
 
 	u1 = u1 % edge4
-	u2 = u2 % edge4
 	if v1 > edge2 - 1:
 		v1 = edge2 - 1
-	if v2 > edge2 - 1:
-		v2 = edge2 - 1
 
-	p0: float = src[v1, u1, k] * (1 - mu) * (1 - mv)
-	p1: float = src[v1, u2, k] * mu * (1 - mv)
-	p2: float = src[v2, u1, k] * (1 - mu) * mv
-	p3: float = src[v2, u2, k] * mu * mv
-	dest[j, i, k] = int (math.floor (p0 + p1 + p2 + p3))
+	dest[j, i, k] = src[v1, u1, k]
 
 @cuda.jit ('void(uint8[:,:,:],uint8[:,:,:])')
 def project_left(dest, src):
@@ -154,23 +121,12 @@ def project_left(dest, src):
 
 	u1: int = int (math.floor (uf))
 	v1: int = int (math.floor (vf))
-	mu: float = uf - u1
-	mv: float = vf - v1
-	u2: int = u1 + 1
-	v2: int = v1 + 1
 
 	u1 = u1 % edge4
-	u2 = u2 % edge4
 	if v1 > edge2 - 1:
 		v1 = edge2 - 1
-	if v2 > edge2 - 1:
-		v2 = edge2 - 1
 
-	p0: float = src[v1, u1, k] * (1 - mu) * (1 - mv)
-	p1: float = src[v1, u2, k] * mu * (1 - mv)
-	p2: float = src[v2, u1, k] * (1 - mu) * mv
-	p3: float = src[v2, u2, k] * mu * mv
-	dest[j, i, k] = int (math.floor (p0 + p1 + p2 + p3))
+	dest[j, i, k] = src[v1, u1, k]
 
 
 @cuda.jit ('void(uint8[:,:,:],uint8[:,:,:])')
@@ -194,23 +150,12 @@ def project_up(dest, src):
 
 	u1: int = int (math.floor (uf))
 	v1: int = int (math.floor (vf))
-	mu: float = uf - u1
-	mv: float = vf - v1
-	u2: int = u1 + 1
-	v2: int = v1 + 1
 
 	u1 = u1 % edge4
-	u2 = u2 % edge4
 	if v1 > edge2 - 1:
 		v1 = edge2 - 1
-	if v2 > edge2 - 1:
-		v2 = edge2 - 1
 
-	p0: float = src[v1, u1, k] * (1 - mu) * (1 - mv)
-	p1: float = src[v1, u2, k] * mu * (1 - mv)
-	p2: float = src[v2, u1, k] * (1 - mu) * mv
-	p3: float = src[v2, u2, k] * mu * mv
-	dest[j, i, k] = int (math.floor (p0 + p1 + p2 + p3))
+	dest[j, i, k] = src[v1, u1, k]
 
 
 @cuda.jit ('void(uint8[:,:,:],uint8[:,:,:])')
@@ -234,20 +179,9 @@ def project_down(dest, src):
 
 	u1: int = int (math.floor (uf))
 	v1: int = int (math.floor (vf))
-	mu: float = uf - u1
-	mv: float = vf - v1
-	u2: int = u1 + 1
-	v2: int = v1 + 1
 
 	u1 = u1 % edge4
-	u2 = u2 % edge4
 	if v1 > edge2 - 1:
 		v1 = edge2 - 1
-	if v2 > edge2 - 1:
-		v2 = edge2 - 1
 
-	p0: float = src[v1, u1, k] * (1 - mu) * (1 - mv)
-	p1: float = src[v1, u2, k] * mu * (1 - mv)
-	p2: float = src[v2, u1, k] * (1 - mu) * mv
-	p3: float = src[v2, u2, k] * mu * mv
-	dest[j, i, k] = int (math.floor (p0 + p1 + p2 + p3))
+	dest[j, i, k] = src[v1, u1, k]

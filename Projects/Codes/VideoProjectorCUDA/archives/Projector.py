@@ -1,10 +1,6 @@
-import pycuda.autoinit  # very important import
 import pycuda.driver as cuda
 from pycuda.compiler import SourceModule
-from VideoProjectorCUDA.utils.ImageProjectCUDA import ImageProjectorTarget
-import multiprocessing
-import numpy as np
-import threading
+from utils import ImageProjectorTarget
 
 
 def project_front(target, imgIn):
