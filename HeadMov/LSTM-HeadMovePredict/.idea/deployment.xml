@@ -5,7 +5,7 @@
       <paths name="liyutong@liyutong-ubuntu.local:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/liyutong/Documents/LSTM-HeedMovePredict" local="$PROJECT_DIR$" />
+            <mapping deploy="/Documents/LSTM-HeadMovePredict" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
