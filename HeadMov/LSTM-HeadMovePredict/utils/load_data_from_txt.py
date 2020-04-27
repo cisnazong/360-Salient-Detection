@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 def load_data_from_txt(data_path:str,
                        preprocess=True,
+                       normalize=False,
                        show=True,
                        column_names=['T','F','x','y','z','k'],
                        offset=2,
@@ -13,6 +14,8 @@ def load_data_from_txt(data_path:str,
 	if preprocess:
 		data_df = data_df.dropna()
 		data_df = data_df.astype('float32')
+	if normalize:
+		pass
 
 	#show the data
 	if show:
