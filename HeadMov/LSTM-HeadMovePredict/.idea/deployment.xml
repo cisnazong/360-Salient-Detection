@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="liyutong@liyutong-ubuntu.local:22" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" showDialogOnRemoteDnD="false" autoUploadExternalChanges="true">
     <serverData>
       <paths name="liyutong@liyutong-ubuntu.local:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/Documents/LSTM-HeadMovePredict" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/liyutong/Documents/LSTM-HeadMovePredict" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

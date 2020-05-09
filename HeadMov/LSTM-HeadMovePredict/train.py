@@ -10,10 +10,10 @@ from tensorboardX import SummaryWriter
 from utils import RecordLoaderAll, RecordLoaderClass
 import time
 
-# Define some parameters
-step_look_back = 120
-step_look_forward = 120
-save_interval = 100
+# Define some hyper parameters
+step_look_back = 60
+step_look_forward = 60
+save_interval = 50
 log_interval = 1
 num_epoch = 2000
 ratio = 0.8
@@ -22,9 +22,8 @@ log_dir = './log'
 model_path = './saved_models/Mon Apr 27 19:51:34 2020_lstm_itr_100_train_0.024368.pth'
 refine = False
 display_current_record = False
+train_class = 'Paris-sJxiPiAaB4k'
 
-train_with_class = True
-train_class = 'uid-11d49395-d270-4c58-b6dd-8894a454c0d3'
 # TensorBoard
 writer = SummaryWriter(log_dir)
 writer.add_text('project', "LSTM-HeadMovePredict")
@@ -47,7 +46,7 @@ from utils import load_data_from_txt
 num_layers = 2
 hidden_size = 128
 model_dropout = 0.2
-model = LSTM(4, hidden_size, 4, num_layers, dropout=model_dropout).cuda()
+model = LSTM(4, hidden_size, 1, num_layers, dropout=model_dropout).cuda()
 
 if refine:
 	model.load_state_dict(torch.load(model_path))
