@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93268f85-b13f-4f40-b00a-9048e6dfb127" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HeadMov/LSTM-HeadMovePredict/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/LSTM-HeadMovePredict/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HeadMov/LSTM-HeadMovePredict/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/LSTM-HeadMovePredict/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/lstm_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/.idea/HeadMoveServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/.idea/HeadMoveServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/model/LSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/model/LSTM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/HeadMoveServer/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HeadMov/LSTM-HeadMovePredict/.idea/LSTM-HeadMovePredict.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HeadMov/LSTM-HeadMovePredict/.idea/LSTM-HeadMovePredict.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588212001640</updated>
       <workItem from="1588212003140" duration="344000" />
+      <workItem from="1589304089803" duration="599000" />
     </task>
     <servers />
   </component>

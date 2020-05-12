@@ -24,13 +24,14 @@ def send_msg(host:str, port:int, signal:Queue):
     while True:
         data_dict = RandomPosGenerator.read()
         data_str = json.dumps(data_dict)
-        print('[ send ] ', data_str)
+        # print('[ send ] ', data_str)
         s.sendto(data_str.encode('utf-8'), (host, port))
         if signal.empty():
             pass
         else:
             if signal.get(timeout=1e-3) != 0:
                 break
+        time.sleep(1 / 30)
     s.close()
 
 def recv_msg(host:str, port:int, signal:Queue):

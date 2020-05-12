@@ -1,4 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
+'LSTM model'
+
+__author__ = 'David'
+
+import sys
 import torch.nn as nn
 
 class LSTM(nn.Module):
