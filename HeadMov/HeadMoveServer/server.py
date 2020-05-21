@@ -49,7 +49,7 @@ def dict_to_json_str(dict: str):
     return json.dumps(dict)
 
 
-def send_msg(host: str, port: int, msg_queue: Queue, signal_queue: Queue):
+def send_msg(host: str, port: int, msg_queue: Queue, host_queue: Queue, signal: Queue):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     P = LSTMPredict()
     while True:
@@ -57,6 +57,7 @@ def send_msg(host: str, port: int, msg_queue: Queue, signal_queue: Queue):
             continue
         else:
             headpos_str = msg_queue.get()
+            addr = host_queue.get()
         headpos_dict = json_str_to_dict(headpos_str)
         headpos_prediction_str = P.predict(headpos_dict)
         if headpos_prediction_str == None:
@@ -73,7 +74,7 @@ def send_msg(host: str, port: int, msg_queue: Queue, signal_queue: Queue):
                 break
             headpos_prediction_slice_str = dict_to_json_str(headpos_prediction_slice)
             print('[ send ] ', headpos_prediction_slice_str)
-            s.sendto(headpos_prediction_slice_str.encode('utf-8'), (host, port))
+            s.sendto(headpos_prediction_slice_str.encode('utf-8'), addr)
         for i in range(msg_queue.qsize()):
             msg_queue.get_nowait()
         if signal.empty():
@@ -84,12 +85,14 @@ def send_msg(host: str, port: int, msg_queue: Queue, signal_queue: Queue):
     s.close()
 
 
-def recv_msg(host: str, port: int, msg_queue: Queue, signal_queue: Queue):
+def recv_msg(host: str, port: int, msg_queue: Queue, host_queue: Queue, signal: Queue):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind((host, port))
     while True:
-        headpos_str = s.recv(1024).decode('utf-8')
+        headpos, addr = s.recvfrom(1024)
+        headpos_str = headpos.decode('utf-8')
         msg_queue.put(headpos_str)
+        host_queue.put(addr)
         # print('[ recv ] ', headpos_str)
         if signal.empty():
             pass
@@ -102,8 +105,9 @@ def recv_msg(host: str, port: int, msg_queue: Queue, signal_queue: Queue):
 if __name__ == '__main__':
     signal = Queue()
     msg_queue = Queue()
-    p_send = Process(target=send_msg, args=('127.0.0.1', 19997, msg_queue, signal,))
-    p_recv = Process(target=recv_msg, args=('127.0.0.1', 19998, msg_queue, signal,))
+    host_queue = Queue()
+    p_send = Process(target=send_msg, args=('127.0.0.1', 19997, msg_queue, host_queue, signal,))
+    p_recv = Process(target=recv_msg, args=('127.0.0.1', 19998, msg_queue, host_queue, signal,))
     p_send.start()
     p_recv.start()
     p_send.join()

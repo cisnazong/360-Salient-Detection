@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="488a9a7b-9dd3-4674-92bd-48058963fbdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/VideoFushionCPU.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/.idea/VideoFusionGPU.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/FLASKServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/dictionaries/liyutong.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/data_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/model/BASNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/model/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/model/resnet_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/photo_convertor.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/photo_convertor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/test_flask.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FLASKServer/tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BASNet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/liyutong.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectorNumba.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectorNumba_single_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archives/Projector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archives/image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archives/image2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archives/photo_convertor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ImageProjectorCubicBilinear.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ImageProjectorCubicSimple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JupyterTrust" id="f3fbef71-5ff7-4e9a-9159-deefa2467a07" />
+  <component name="ProjectId" id="1a8H38943dddozO2nPHjXCaeWVq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/VideoProjectorCUDA" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/VideoProjectorCUDA" />
+      <recent name="$PROJECT_DIR$/VideoProjectorCUDA/utils" />
+      <recent name="$PROJECT_DIR$/basnet-modified" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/VideoProjectorCUDA/utils" />
+      <recent name="$PROJECT_DIR$/VideoProjectorCUDA/utils/ImageProjectorCubicSimple" />
+      <recent name="$PROJECT_DIR$/VideoProjectorCUDA/utils/ImageProjectorCubicBilinear" />
+      <recent name="$PROJECT_DIR$/VideoProjectorCUDA/archives" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.FushionPy360Convert">
+    <configuration name="FushionPy360Convert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BASNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FushionPy360Convert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectorNumba" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="BASNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DISPLAY" value="localhost:10.0" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectorNumba.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectorNumba_single_view" type="PythonConfigurationType" factoryName="Python">
+      <module name="BASNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DISPLAY" value="localhost:10.0" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectorNumba_single_view.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="BASNet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ProjectorNumba" />
+      <item itemvalue="Python.ProjectorNumba_single_view" />
+      <item itemvalue="Python.FushionPy360Convert" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.FushionPy360Convert" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="488a9a7b-9dd3-4674-92bd-48058963fbdf" name="Default Changelist" comment="" />
+      <created>1586110098326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586110098326</updated>
+      <workItem from="1586110101851" duration="1787000" />
+      <workItem from="1586136469184" duration="1417000" />
+      <workItem from="1586269828059" duration="3323000" />
+      <workItem from="1586273250471" duration="6512000" />
+      <workItem from="1586317413878" duration="9710000" />
+      <workItem from="1586335704296" duration="20189000" />
+      <workItem from="1586361989481" duration="4057000" />
+      <workItem from="1586392943707" duration="11076000" />
+      <workItem from="1586450890244" duration="3221000" />
+      <workItem from="1586476996878" duration="21414000" />
+      <workItem from="1586530098607" duration="13233000" />
+      <workItem from="1586621599923" duration="665000" />
+      <workItem from="1586622756851" duration="1097000" />
+      <workItem from="1586700972932" duration="12547000" />
+      <workItem from="1586759259490" duration="19755000" />
+      <workItem from="1586843488838" duration="332000" />
+      <workItem from="1586844227547" duration="479000" />
+      <workItem from="1586929963184" duration="47000" />
+      <workItem from="1586932903849" duration="755000" />
+      <workItem from="1587998432936" duration="7378000" />
+      <workItem from="1589995125511" duration="6207000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1136" y="524" key="#Deployment" timestamp="1586270086051">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="1136" y="524" key="#Deployment/65.23.2943.1669@65.23.2943.1669" timestamp="1586270086051" />
+    <state x="1136" y="524" key="#Inspections" timestamp="1586766121561">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="1135" y="524" key="#Inspections/63.23.2945.1669@63.23.2945.1669" timestamp="1586272592110" />
+    <state x="1136" y="524" key="#Inspections/65.23.2943.1669@65.23.2943.1669" timestamp="1586766121561" />
+    <state x="908" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587999760161">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="771" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/53.23.2507.1417@53.23.2507.1417" timestamp="1586110260636" />
+    <state x="902" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/56.23.2952.1669@56.23.2952.1669" timestamp="1586832040483" />
+    <state x="906" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.23.2946.1669@62.23.2946.1669" timestamp="1586528273863" />
+    <state x="908" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/64.23.2944.1669@64.23.2944.1669" timestamp="1586843749168" />
+    <state x="908" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.23.2943.1669@65.23.2943.1669" timestamp="1587999760161" />
+    <state x="909" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.23.2941.1669@67.23.2941.1669" timestamp="1586744382598" />
+    <state x="1233" y="667" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587999499463">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="1231" y="667" key="#com.intellij.fileTypes.FileTypeChooser/62.23.2946.1669@62.23.2946.1669" timestamp="1586438870555" />
+    <state x="1232" y="667" key="#com.intellij.fileTypes.FileTypeChooser/64.23.2944.1669@64.23.2944.1669" timestamp="1586834240463" />
+    <state x="1233" y="667" key="#com.intellij.fileTypes.FileTypeChooser/65.23.2943.1669@65.23.2943.1669" timestamp="1587999499463" />
+    <state x="1225" y="602" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586576943145">
+      <screen x="62" y="23" width="2946" height="1669" />
+    </state>
+    <state x="1225" y="602" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/62.23.2946.1669@62.23.2946.1669" timestamp="1586576943145" />
+    <state x="1444" y="617" key="#xdebugger.XInspectDialog" timestamp="1586395455775">
+      <screen x="67" y="23" width="2941" height="1669" />
+    </state>
+    <state x="1443" y="617" key="#xdebugger.XInspectDialog/65.23.2943.1669@65.23.2943.1669" timestamp="1586334925183" />
+    <state x="1444" y="617" key="#xdebugger.XInspectDialog/67.23.2941.1669@67.23.2941.1669" timestamp="1586395455775" />
+    <state x="1298" y="571" key="#xdebugger.evaluate" timestamp="1588005666554">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="1296" y="571" key="#xdebugger.evaluate/62.23.2946.1669@62.23.2946.1669" timestamp="1586525148085" />
+    <state x="1298" y="571" key="#xdebugger.evaluate/65.23.2943.1669@65.23.2943.1669" timestamp="1588005666554" />
+    <state x="1299" y="571" key="#xdebugger.evaluate/67.23.2941.1669@67.23.2941.1669" timestamp="1586399897830" />
+    <state x="821" y="462" key="CommitChangelistDialog2" timestamp="1586498415106">
+      <screen x="56" y="23" width="2952" height="1669" />
+    </state>
+    <state x="821" y="462" key="CommitChangelistDialog2/56.23.2952.1669@56.23.2952.1669" timestamp="1586498415106" />
+    <state x="173" y="103" width="2306" height="1217" key="DirDiffDialog" timestamp="1586110720415">
+      <screen x="53" y="23" width="2507" height="1417" />
+    </state>
+    <state x="173" y="103" width="2306" height="1217" key="DirDiffDialog/53.23.2507.1417@53.23.2507.1417" timestamp="1586110720415" />
+    <state x="1198" y="569" key="EnvironmentVariablesDialog" timestamp="1586755202541">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="1196" y="569" key="EnvironmentVariablesDialog/62.23.2946.1669@62.23.2946.1669" timestamp="1586528272982" />
+    <state x="1198" y="569" key="EnvironmentVariablesDialog/65.23.2943.1669@65.23.2943.1669" timestamp="1586755202541" />
+    <state width="1476" height="426" key="GridCell.Tab.0.bottom" timestamp="1588006754093">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.0.bottom/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724286" />
+    <state width="1449" height="426" key="GridCell.Tab.0.bottom/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286670" />
+    <state width="1449" height="426" key="GridCell.Tab.0.bottom/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226755" />
+    <state width="1449" height="426" key="GridCell.Tab.0.bottom/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781479" />
+    <state width="1449" height="426" key="GridCell.Tab.0.bottom/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574854" />
+    <state width="1476" height="426" key="GridCell.Tab.0.bottom/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754093" />
+    <state width="1476" height="426" key="GridCell.Tab.0.bottom/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307921" />
+    <state width="1449" height="426" key="GridCell.Tab.0.bottom/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364786" />
+    <state width="1476" height="426" key="GridCell.Tab.0.center" timestamp="1588006754092">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.0.center/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724285" />
+    <state width="1449" height="426" key="GridCell.Tab.0.center/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286669" />
+    <state width="1449" height="426" key="GridCell.Tab.0.center/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226754" />
+    <state width="1449" height="426" key="GridCell.Tab.0.center/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781478" />
+    <state width="1449" height="426" key="GridCell.Tab.0.center/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574853" />
+    <state width="1476" height="426" key="GridCell.Tab.0.center/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754092" />
+    <state width="1476" height="426" key="GridCell.Tab.0.center/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307920" />
+    <state width="1449" height="426" key="GridCell.Tab.0.center/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364785" />
+    <state width="1476" height="426" key="GridCell.Tab.0.left" timestamp="1588006754092">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.0.left/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724285" />
+    <state width="1449" height="426" key="GridCell.Tab.0.left/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286669" />
+    <state width="1449" height="426" key="GridCell.Tab.0.left/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226754" />
+    <state width="1449" height="426" key="GridCell.Tab.0.left/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781478" />
+    <state width="1449" height="426" key="GridCell.Tab.0.left/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574853" />
+    <state width="1476" height="426" key="GridCell.Tab.0.left/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754092" />
+    <state width="1476" height="426" key="GridCell.Tab.0.left/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307920" />
+    <state width="1449" height="426" key="GridCell.Tab.0.left/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364785" />
+    <state width="1476" height="426" key="GridCell.Tab.0.right" timestamp="1588006754092">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.0.right/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724286" />
+    <state width="1449" height="426" key="GridCell.Tab.0.right/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286670" />
+    <state width="1449" height="426" key="GridCell.Tab.0.right/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226754" />
+    <state width="1449" height="426" key="GridCell.Tab.0.right/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781479" />
+    <state width="1449" height="426" key="GridCell.Tab.0.right/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574854" />
+    <state width="1476" height="426" key="GridCell.Tab.0.right/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754092" />
+    <state width="1476" height="426" key="GridCell.Tab.0.right/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307921" />
+    <state width="1449" height="426" key="GridCell.Tab.0.right/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364785" />
+    <state width="1476" height="426" key="GridCell.Tab.1.bottom" timestamp="1588006754093">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.1.bottom/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724287" />
+    <state width="1449" height="426" key="GridCell.Tab.1.bottom/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286672" />
+    <state width="1449" height="426" key="GridCell.Tab.1.bottom/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226755" />
+    <state width="1449" height="426" key="GridCell.Tab.1.bottom/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781480" />
+    <state width="1449" height="426" key="GridCell.Tab.1.bottom/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574755" />
+    <state width="1476" height="426" key="GridCell.Tab.1.bottom/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754093" />
+    <state width="1476" height="426" key="GridCell.Tab.1.bottom/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307923" />
+    <state width="1449" height="426" key="GridCell.Tab.1.bottom/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364787" />
+    <state width="1476" height="426" key="GridCell.Tab.1.center" timestamp="1588006754093">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.1.center/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724286" />
+    <state width="1449" height="426" key="GridCell.Tab.1.center/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286671" />
+    <state width="1449" height="426" key="GridCell.Tab.1.center/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226755" />
+    <state width="1449" height="426" key="GridCell.Tab.1.center/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781479" />
+    <state width="1449" height="426" key="GridCell.Tab.1.center/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574754" />
+    <state width="1476" height="426" key="GridCell.Tab.1.center/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754093" />
+    <state width="1476" height="426" key="GridCell.Tab.1.center/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307922" />
+    <state width="1449" height="426" key="GridCell.Tab.1.center/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364786" />
+    <state width="1476" height="426" key="GridCell.Tab.1.left" timestamp="1588006754093">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.1.left/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724286" />
+    <state width="1449" height="426" key="GridCell.Tab.1.left/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286671" />
+    <state width="1449" height="426" key="GridCell.Tab.1.left/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226755" />
+    <state width="1449" height="426" key="GridCell.Tab.1.left/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781479" />
+    <state width="1449" height="426" key="GridCell.Tab.1.left/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574754" />
+    <state width="1476" height="426" key="GridCell.Tab.1.left/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754093" />
+    <state width="1476" height="426" key="GridCell.Tab.1.left/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307922" />
+    <state width="1449" height="426" key="GridCell.Tab.1.left/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364786" />
+    <state width="1476" height="426" key="GridCell.Tab.1.right" timestamp="1588006754093">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state width="1449" height="426" key="GridCell.Tab.1.right/1440.23.1920.1057/37.23.1403.877@37.23.1403.877" timestamp="1586476724286" />
+    <state width="1449" height="426" key="GridCell.Tab.1.right/56.23.2952.1669@56.23.2952.1669" timestamp="1586525286671" />
+    <state width="1449" height="426" key="GridCell.Tab.1.right/61.23.2947.1669@61.23.2947.1669" timestamp="1586536226755" />
+    <state width="1449" height="426" key="GridCell.Tab.1.right/62.23.2946.1669@62.23.2946.1669" timestamp="1586527781480" />
+    <state width="1449" height="426" key="GridCell.Tab.1.right/63.23.2945.1669@63.23.2945.1669" timestamp="1586452574754" />
+    <state width="1476" height="426" key="GridCell.Tab.1.right/64.23.2944.1669@64.23.2944.1669" timestamp="1588006754093" />
+    <state width="1476" height="426" key="GridCell.Tab.1.right/65.23.2943.1669@65.23.2943.1669" timestamp="1588006307922" />
+    <state width="1449" height="426" key="GridCell.Tab.1.right/67.23.2941.1669@67.23.2941.1669" timestamp="1586744364787" />
+    <state x="1043" y="598" width="733" height="519" key="PyMappingSimpleResolveDialog" timestamp="1586310934801">
+      <screen x="67" y="23" width="2941" height="1669" />
+    </state>
+    <state x="1043" y="598" width="733" height="519" key="PyMappingSimpleResolveDialog/67.23.2941.1669@67.23.2941.1669" timestamp="1586310934801" />
+    <state x="950" y="432" key="SettingsEditor" timestamp="1586843614983">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state x="808" y="370" key="SettingsEditor/53.23.2507.1417@53.23.2507.1417" timestamp="1586110236871" />
+    <state x="950" y="432" key="SettingsEditor/64.23.2944.1669@64.23.2944.1669" timestamp="1586843614983" />
+    <state x="951" y="432" key="SettingsEditor/65.23.2943.1669@65.23.2943.1669" timestamp="1586354919810" />
+    <state x="952" y="432" key="SettingsEditor/67.23.2941.1669@67.23.2941.1669" timestamp="1586307694760" />
+    <state x="170" y="123" width="2740" height="1469" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586827642712">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state x="167" y="123" width="2741" height="1469" key="com.intellij.history.integration.ui.views.FileHistoryDialog/61.23.2947.1669@61.23.2947.1669" timestamp="1586498482061" />
+    <state x="168" y="123" width="2741" height="1469" key="com.intellij.history.integration.ui.views.FileHistoryDialog/62.23.2946.1669@62.23.2946.1669" timestamp="1586525739523" />
+    <state x="170" y="123" width="2740" height="1469" key="com.intellij.history.integration.ui.views.FileHistoryDialog/64.23.2944.1669@64.23.2944.1669" timestamp="1586827642712" />
+    <state x="930" y="323" width="2738" height="1469" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.23.2941.1669@67.23.2941.1669" timestamp="1586744261134" />
+    <state x="167" y="123" width="2741" height="1469" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1586586123691">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state x="167" y="123" width="2741" height="1469" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/64.23.2944.1669@64.23.2944.1669" timestamp="1586586123691" />
+    <state x="964" y="566" key="com.intellij.ide.util.TipDialog" timestamp="1586530098698">
+      <screen x="56" y="23" width="2952" height="1669" />
+    </state>
+    <state x="964" y="566" key="com.intellij.ide.util.TipDialog/56.23.2952.1669@56.23.2952.1669" timestamp="1586530098698" />
+    <state x="970" y="566" key="com.intellij.ide.util.TipDialog/64.23.2944.1669@64.23.2944.1669" timestamp="1586361990186" />
+    <state x="971" y="566" key="com.intellij.ide.util.TipDialog/65.23.2943.1669@65.23.2943.1669" timestamp="1586450893054" />
+    <state x="972" y="566" key="com.intellij.ide.util.TipDialog/67.23.2941.1669@67.23.2941.1669" timestamp="1586477000030" />
+    <state x="1211" y="522" width="1377" height="541" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1586270227097">
+      <screen x="65" y="23" width="2943" height="1669" />
+    </state>
+    <state x="1211" y="522" width="1377" height="541" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/65.23.2943.1669@65.23.2943.1669" timestamp="1586270227097" />
+    <state x="1338" y="533" width="640" height="519" key="ftp.server.browser" timestamp="1586843612421">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state x="1338" y="533" key="ftp.server.browser/64.23.2944.1669@64.23.2944.1669" timestamp="1586843612421" />
+    <state x="1339" y="533" width="640" height="519" key="ftp.server.browser/65.23.2943.1669@65.23.2943.1669" timestamp="1586270152064" />
+    <state x="1202" y="411" width="670" height="676" key="search.everywhere.popup" timestamp="1586503293946">
+      <screen x="64" y="23" width="2944" height="1669" />
+    </state>
+    <state x="1202" y="411" width="670" height="676" key="search.everywhere.popup/64.23.2944.1669@64.23.2944.1669" timestamp="1586503293946" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/archives/image.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/archives/image.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/archives/image.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/archives/image.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ProjectorNumba_single_view.py</url>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="cap" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BASNet$image.coverage" NAME="image Coverage Results" MODIFIED="1586744686072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basnet-modified" />
+    <SUITE FILE_PATH="coverage/BASNet$test_convertor.coverage" NAME="test_convertor Coverage Results" MODIFIED="1586527747602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basnet-modified" />
+    <SUITE FILE_PATH="coverage/BASNet$photo_convertor.coverage" NAME="photo_convertor Coverage Results" MODIFIED="1586310591283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basnet-modified" />
+    <SUITE FILE_PATH="coverage/BASNet$ProjectorNumba.coverage" NAME="ProjectorNumba Coverage Results" MODIFIED="1586827662690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VideoProjectorCUDA" />
+    <SUITE FILE_PATH="coverage/BASNet$train.coverage" NAME="train Coverage Results" MODIFIED="1586510838174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basnet-modified" />
+    <SUITE FILE_PATH="coverage/BASNet$basnet_train.coverage" NAME="basnet_train Coverage Results" MODIFIED="1586270350866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/BASNet$photo_convert_cuda.coverage" NAME="photo_convert_cuda Coverage Results" MODIFIED="1586399174654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/basnet-modified" />
+    <SUITE FILE_PATH="coverage/VideoProjectorCUDA$FushionPy360Convert.coverage" NAME="FushionPy360Convert Coverage Results" MODIFIED="1588006289189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
