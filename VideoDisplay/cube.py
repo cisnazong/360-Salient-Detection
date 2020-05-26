@@ -98,11 +98,13 @@ def draw():
     # ---------------------------------------------------------------
     glBegin(GL_TRIANGLES)  # 开始绘制三角形（z轴负半区）
 
+    cnt = 0
     for triangle in shapes:
-        glColor4f(colors[0][0],colors[0][1],colors[0][2],colors[0][3])
+        glColor4f(colors[int(cnt / 2)][0],colors[int(cnt / 2)][1],colors[int(cnt / 2)][2],colors[int(cnt / 2)][3])
         glVertex3f(triangle[0][0],triangle[0][1],triangle[0][2])
         glVertex3f(triangle[1][0],triangle[1][1],triangle[1][2])
         glVertex3f(triangle[2][0],triangle[2][1],triangle[2][2])
+        cnt = cnt + 1
 
     glEnd()  # 结束绘制三角形
 
