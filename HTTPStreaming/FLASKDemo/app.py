@@ -31,10 +31,19 @@ def show_player2(filename=None):
     return render_template('display2.html', filename=filename)
 
 
+@app.route('/display_multi/<video_list_str>')
+def show_player_multi(video_list_str=None):
+    print('[+]' + ' parameters: ' + video_list_str)
+    video_list = video_list_str.split('&')
+    print('[+]' + ' streaming videos: ' + str(video_list))
+    return render_template('display_multi.html', video_list=video_list)
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
 if __name__ == '__main__':
+    print('[+]'+' current working directory: ' + os.getcwd())
     app.run(threaded=True)
