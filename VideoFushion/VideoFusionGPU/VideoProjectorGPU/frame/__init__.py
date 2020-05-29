@@ -35,6 +35,16 @@ class frame_processor(object):
         self.imgOut_cpu_list = [np.zeros(shape=self.view_shape, dtype=np.uint8) for i in range(6)]
         self.title_list = ['front', 'right', 'back', 'left', 'up', 'down']
 
+        self.u1_gpu_list = [cuda.device_array(shape=(self.edge, self.edge)) for i in range(6)]
+        self.v1_gpu_list = [cuda.device_array(shape=(self.edge, self.edge)) for i in range(6)]
+        self.u2_gpu_list = [cuda.device_array(shape=(self.edge, self.edge)) for i in range(6)]
+        self.v2_gpu_list = [cuda.device_array(shape=(self.edge, self.edge)) for i in range(6)]
+        self.mu_gpu_list = [cuda.device_array(shape=(self.edge, self.edge)) for i in range(6)]
+        self.mv_gpu_list = [cuda.device_array(shape=(self.edge, self.edge)) for i in range(6)]
+
+    def compile(self):
+        pass
+
     def render(self, frame):
         pass
 
@@ -71,4 +81,5 @@ class frame_to_horizon(frame_processor):
             self.imgOut_gpu_list[i].copy_to_host(self.imgOut_cpu_list[i], stream=self.stream_list[i])
         cuda.synchronize()
         self.imgOut_cpu = np.concatenate(tuple([self.imgOut_cpu_list[i] for i in range(6)]), axis=1)
+        # 这里加入一个GPU的copy函数
         return self.imgOut_cpu

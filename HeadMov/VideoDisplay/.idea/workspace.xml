@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24d56aef-2757-484c-85fb-1258bebb609b" name="Default Changelist" comment="" />
+    <list default="true" id="24d56aef-2757-484c-85fb-1258bebb609b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../VideoFushion/VideoFusionGPU/VideoProjectorGPU/utils/ImageProjectorCompiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VideoFushion/VideoFusionGPU/VideoProjectorGPU/frame/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../VideoFushion/VideoFusionGPU/VideoProjectorGPU/frame/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +73,7 @@
       <workItem from="1589987647759" duration="193000" />
       <workItem from="1589987891092" duration="854000" />
       <workItem from="1590423985354" duration="33000" />
+      <workItem from="1590628705971" duration="119000" />
     </task>
     <servers />
   </component>
