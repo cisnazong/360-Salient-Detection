@@ -2,58 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488a9a7b-9dd3-4674-92bd-48058963fbdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/VideoFushionCPU.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFushionCPU/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/.idea/VideoFusionGPU.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../VideoFushion/VideoFusionGPU/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/FLASKServer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/dictionaries/liyutong.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/data_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/model/BASNet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/model/resnet_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/photo_convertor.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/photo_convertor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/run.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/test_flask.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FLASKServer/tools.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BASNet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/liyutong.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectorNumba.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectorNumba_single_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archives/Projector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archives/image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archives/image2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archives/photo_convertor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ImageProjectorCubicBilinear.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ImageProjectorCubicSimple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/eval_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/get_mae.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/max_fscore.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/test_pr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/train_info_txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/FLASKServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/FLASKServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/model/BASNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/model/BASNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/model/resnet_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/model/resnet_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/photo_convertor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/photo_convertor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/test_flask.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/test_flask.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../BASNet/FLASKServer/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../BASNet/FLASKServer/core/tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Reports/0416/VR Video Processing.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Reports/0416/VR Video Processing.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,6 +209,7 @@
       <workItem from="1586932903849" duration="755000" />
       <workItem from="1587998432936" duration="7378000" />
       <workItem from="1589995125511" duration="6207000" />
+      <workItem from="1594724769980" duration="215000" />
     </task>
     <servers />
   </component>
@@ -256,9 +226,10 @@
     </state>
     <state x="1135" y="524" key="#Inspections/63.23.2945.1669@63.23.2945.1669" timestamp="1586272592110" />
     <state x="1136" y="524" key="#Inspections/65.23.2943.1669@65.23.2943.1669" timestamp="1586766121561" />
-    <state x="908" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587999760161">
-      <screen x="65" y="23" width="2943" height="1669" />
+    <state x="508" y="293" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594724919957">
+      <screen x="38" y="23" width="1642" height="1027" />
     </state>
+    <state x="508" y="293" key="#com.intellij.execution.impl.EditConfigurationsDialog/38.23.1642.1027@38.23.1642.1027" timestamp="1594724919957" />
     <state x="771" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/53.23.2507.1417@53.23.2507.1417" timestamp="1586110260636" />
     <state x="902" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/56.23.2952.1669@56.23.2952.1669" timestamp="1586832040483" />
     <state x="906" y="461" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.23.2946.1669@62.23.2946.1669" timestamp="1586528273863" />

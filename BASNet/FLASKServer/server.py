@@ -1,9 +1,9 @@
 from flask import Flask, request
-from tools import Detector
+from core.tools import Detector
 import json, time
-import cv2
+
 app = Flask(__name__)
-frameDetector = Detector('./saved_models/basnet_bsi/basnet_self_trained.pth')
+frameDetector = Detector('core/saved_models/basnet_bsi/basnet_self_trained.pth')
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
@@ -23,3 +23,6 @@ def predict_image():
     duration = time.time() - start_time
     print ('duration:[%.0fms]' % (duration * 1000))
     return msg
+
+if __name__ == '__main__':
+    app.run(host='liyutong-ubuntu.local', port=5000)
